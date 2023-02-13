@@ -1,15 +1,25 @@
-document.getElementById("test").addEventListener("click", sidebar);
+document.getElementById("sidenav").addEventListener("click", sidebar);
 
 function sidebar()
 {
     if(this.checked)
     {
-        console.log("its on");
+        sidebaron();
         this.checked=false;
     }
     else
     {
-        console.log("its off");
+        sidebaroff();
         this.checked=true;
     }
+}
+
+function sidebaron()
+{
+    console.log("ON");
+}
+
+function sidebaroff()
+{
+    console.log("OFF");
 }
