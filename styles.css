@@ -86,13 +86,16 @@ p {
     transform: translate3d(85px,0,0);
   }
 }
+
 .main-container {
-  width: 100%;
+  width: auto;
   height: auto;
   background-color: rgb(141, 124, 180);
   display: grid;
   grid-template-columns: 5% auto;
+  position: relative;
 }
+
 .left-menu {
   background-color: rgb(96,96,97,255);
 
@@ -103,6 +106,7 @@ p {
   transition: all .4s ease;
   left: 0;
 }
+
 .left-menu:hover{
   width: 13rem;
   position: relative;
@@ -110,12 +114,18 @@ p {
   bottom: 0;
   left: 0;
   overflow-y: auto;
+  position: fixed;
+}
+.right-menu{
+  z-index: 0;
+  top: 0;
+  right: 0;
 }
 .left-menu:hover + .right-menu{
-  float: left;
-  transition: all .4s ease;
-  transform: translateX(180px);
+  transform: translateX(210px);
+  position: absolute;
 }
+
 .left-menu ul {
   margin-top: 2rem;
   margin-left: 1.5rem;
@@ -123,6 +133,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
 }
+
 ul li {
   font-family: 'Poppins', sans-serif;
   list-style: none;
@@ -130,11 +141,13 @@ ul li {
   align-items: center;
   transition: all .3s linear;
 }
+
 .left-menu ul li a {
   padding: 0.5rem;
   color: white;
   text-decoration: none;
 }
+
 button.sidenav {
   background-color: rgb(176, 40, 67);
 }
