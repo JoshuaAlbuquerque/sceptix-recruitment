@@ -88,26 +88,33 @@ p {
 }
 .main-container {
   width: 100%;
-  height: 100%;
-  background-color: white;
+  height: auto;
+  background-color: rgb(141, 124, 180);
   display: grid;
-  grid-template-columns: auto 95%;
+  grid-template-columns: 5% auto;
 }
 .left-menu {
   background-color: rgb(96,96,97,255);
 
-  width: 1%;
+  width: 5%;
   height: 100%;
   flex-direction: column;
   overflow: hidden;
   transition: all .4s ease;
   left: 0;
 }
-.right-menu {
-  float: right;
- }
-.left-menu:hover {
+.left-menu:hover{
   width: 13rem;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+}
+.left-menu:hover + .right-menu{
+  float: left;
+  transition: all .4s ease;
+  transform: translateX(180px);
 }
 .left-menu ul {
   margin-top: 2rem;
