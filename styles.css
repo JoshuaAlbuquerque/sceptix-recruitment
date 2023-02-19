@@ -210,11 +210,41 @@ img {
 /*HOver card-end*/
 
 .closed {
+  animation: up 1.5s forwards;
   visibility:collapse;
 }
 .opened {
   visibility: visible;
+  animation: down 1.5s backwards;
 }
 .btn {
   visibility:visible;
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: down(-90deg);
+  }
+  50% {
+    transform: down(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: down(0deg);
+  }
+}
+
+@keyframes up {
+  100% {
+    opacity: 1;
+    transform: up(0deg);
+  }
+  50% {
+    transform: up(-20deg);
+  }
+  0% {
+    opacity: 0;
+    transform: up(-90deg);
+  }
 }

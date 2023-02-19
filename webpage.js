@@ -8,14 +8,14 @@ function collapse1()
 {
     if(check)
     {
-        console.log("ON");
-        document.getElementById("history").classList.toggle("opened");
+        console.log("OFF");
+        document.getElementById("history").classList.toggle("closed");
         check = false;
     }
     else
     {
-        console.log("OFF");
-        document.getElementById("history").classList.toggle("closed");
+        console.log("On");
+        document.getElementById("history").classList.toggle("opened");
         check = true;
     }
 }
