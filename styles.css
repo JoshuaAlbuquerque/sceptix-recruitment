@@ -209,6 +209,12 @@ img {
 
 /*HOver card-end*/
 
-button.sidenav {
-  background-color: rgb(176, 40, 67);
+.closed {
+  visibility:collapse;
+}
+.opened {
+  visibility: visible;
+}
+.btn {
+  visibility:visible;
 }

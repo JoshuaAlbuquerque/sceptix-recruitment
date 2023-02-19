@@ -1,25 +1,25 @@
-document.getElementById("sidenav").addEventListener("click", sidebar);
-
-function sidebar()
+let col = document.getElementById("history").addEventListener("click", collapse);
+let check=false;
+function collapse()
 {
-    if(this.checked)
+    if(check)
     {
-        sidebaron();
-        this.checked=false;
+        collapseon();
+        check = false;
     }
     else
     {
-        sidebaroff();
-        this.checked=true;
+        collapseoff();
+        check = true;
     }
 }
 
-function sidebaron()
+function collapseon()
 {
-    console.log("ON");
+    document.getElementById("history").classList.toggle("opened");
 }
 
-function sidebaroff()
+function collapseoff()
 {
-    console.log("OFF");
+    document.getElementById("history").classList.toggle("closed");
 }
