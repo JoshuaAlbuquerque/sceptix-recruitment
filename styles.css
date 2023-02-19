@@ -7,6 +7,7 @@ body {
   background-color: rgb(53, 52, 77);
   margin:0;
   height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -17,7 +18,6 @@ h1 {
 p {
   letter-spacing: 1px;
   font-size:14px;
-  color: #333333;
 }
 
 .header {
@@ -88,21 +88,24 @@ p {
 }
 .main-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: white;
-  
+  display: grid;
+  grid-template-columns: auto 95%;
 }
 .left-menu {
-  background: rgb(96,96,97,255);
+  background-color: rgb(96,96,97,255);
 
-  width: 4rem;
-  height: 100vh;
-  display: flex;
+  width: 1%;
+  height: 100%;
   flex-direction: column;
   overflow: hidden;
   transition: all .4s ease;
   left: 0;
 }
+.right-menu {
+  float: right;
+ }
 .left-menu:hover {
   width: 13rem;
 }
@@ -124,9 +127,6 @@ ul li {
   padding: 0.5rem;
   color: white;
   text-decoration: none;
-}
-.right-content {
-
 }
 button.sidenav {
   background-color: rgb(176, 40, 67);
