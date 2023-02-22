@@ -221,10 +221,14 @@ img {
 .opened {
   visibility: visible;
   animation: down 1.5s backwards;
-  background-color: #602080;
+  background-color: black;
   border: solid;
   border-width: 5;
   border-radius: 15px;
+  color: white;
+  border-color: white;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .btn {
   visibility:visible;
