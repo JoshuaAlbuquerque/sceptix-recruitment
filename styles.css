@@ -226,11 +226,13 @@ img {
   font-size: 50px;
   background-color: rgb(46, 52, 55);
   color: hotpink;
+  
 }
 .btn :hover{
   transition: opacity 0.5s;
   text-decoration: underline;
   opacity: 0.6;
+  box-shadow: 10px 10px 10px 4px;
 }
 @keyframes down {
   0% {
