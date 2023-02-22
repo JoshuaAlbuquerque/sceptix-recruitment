@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: rgb(53, 52, 77);
+  background-color: #202040;
   margin:0;
   height: 100%;
   width: 100%;
@@ -90,7 +90,7 @@ p {
 .main-container {
   width: auto;
   height: auto;
-  background-color: rgb(141, 124, 180);
+  background-color: #202060;
   display: grid;
   grid-template-columns: 5% auto;
   position: relative;
@@ -216,11 +216,22 @@ img {
 .opened {
   visibility: visible;
   animation: down 1.5s backwards;
+  background-color: #602080;
+  border: solid;
+  border-width: 5;
+  border-radius: 5px;
 }
 .btn {
   visibility:visible;
+  font-size: 50px;
+  background-color: rgb(46, 52, 55);
+  color: hotpink;
 }
-
+.btn :hover{
+  transition: opacity 0.5s;
+  text-decoration: underline;
+  opacity: 0.6;
+}
 @keyframes down {
   0% {
     opacity: 0;
