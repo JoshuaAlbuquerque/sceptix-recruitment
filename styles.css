@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: #202040;
+  background-color: #222629;
   margin:0;
   height: 100%;
   width: 100%;
@@ -90,7 +90,7 @@ p {
 .main-container {
   width: auto;
   height: auto;
-  background-color: #202060;
+  background-color: #474B4F;
   display: grid;
   grid-template-columns: 5% auto;
   position: relative;
@@ -105,6 +105,7 @@ p {
   overflow: hidden;
   transition: all .4s ease;
   left: 0;
+  
 }
 
 .left-menu:hover{
@@ -132,7 +133,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: rgb(106, 102, 102);
+  background-color: #6B6E70;
   height: 93%;
 }
 
@@ -223,15 +224,16 @@ img {
   background-color: #602080;
   border: solid;
   border-width: 5;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 .btn {
   visibility:visible;
   font-size: 50px;
-  background-color: rgb(46, 52, 55);
-  color: hotpink;
+  background-color: #86C232;
+  color: white;
   justify-content: center;
   padding: 15px;
+  border-radius: 15px;
 }
 .btn :hover{
   transition: opacity 0.5s;
